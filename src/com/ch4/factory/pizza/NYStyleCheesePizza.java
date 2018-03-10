@@ -1,4 +1,4 @@
-package com.ch4.factory;
+package com.ch4.factory.pizza;
 
 public class NYStyleCheesePizza extends Pizza {
 

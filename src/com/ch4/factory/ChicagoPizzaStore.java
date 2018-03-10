@@ -1,5 +1,7 @@
 package com.ch4.factory;
 
+import com.ch4.factory.pizza.*;
+
 public class ChicagoPizzaStore extends PizzaStore{
 
     @Override

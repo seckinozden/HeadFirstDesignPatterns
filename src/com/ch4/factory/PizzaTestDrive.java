@@ -1,5 +1,7 @@
 package com.ch4.factory;
 
+import com.ch4.factory.pizza.Pizza;
+
 public class PizzaTestDrive {
 
     public static void main(String[] args) {

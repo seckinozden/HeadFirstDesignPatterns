@@ -1,5 +1,7 @@
 package com.ch4.factory;
 
+import com.ch4.factory.pizza.Pizza;
+
 public abstract class PizzaStore {
 
     public Pizza orderPizza(String type) {
