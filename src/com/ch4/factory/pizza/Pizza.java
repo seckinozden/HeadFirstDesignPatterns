@@ -1,26 +1,18 @@
 package com.ch4.factory.pizza;
 
-import java.util.ArrayList;
+import com.ch4.factory.ingredient.*;
 
 public abstract class Pizza {
 
-
     String name;
-    String dough;
-    String sauce;
-    ArrayList toppings = new ArrayList();
+    Dough dough;
+    Sauce sauce;
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clam clam;
+    Veggie[] veggies;
 
-    void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        if (toppings.size() > 0) {
-            System.out.println("Adding toppings: ");
-            for (int i = 0; i < toppings.size(); i++) {
-                System.out.println(" " + toppings.get(i));
-            }
-        }
-    }
+    abstract void prepare();
 
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");

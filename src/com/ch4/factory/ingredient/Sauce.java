@@ -1,4 +1,4 @@
 package com.ch4.factory.ingredient;
 
-public class Sauce {
+public interface Sauce {
 }
