@@ -1,6 +1,9 @@
 package com.ch4.factory;
 
 import com.ch4.factory.pizza.Pizza;
+import com.ch4.factory.pizzaStore.ChicagoPizzaStore;
+import com.ch4.factory.pizzaStore.NYPizzaStore;
+import com.ch4.factory.pizzaStore.PizzaStore;
 
 public class PizzaTestDrive {
 
