@@ -1,21 +1,31 @@
 package com.ch4.factory.pizzaStore;
 
 import com.ch4.factory.ingredient.factory.ChicagoPizzaIngredientFactory;
+import com.ch4.factory.ingredient.factory.PizzaIngredientFactory;
 import com.ch4.factory.pizza.*;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
+    Pizza pizza = null;
+    PizzaIngredientFactory ingredientFactory =
+            new ChicagoPizzaIngredientFactory();
+
     @Override
     public Pizza createPizza(String item) {
         if (item.equals("cheese")) {
-            return new CheesePizza(new ChicagoPizzaIngredientFactory());
+            pizza = new CheesePizza(new ChicagoPizzaIngredientFactory());
+            pizza.setName("Chicago Style Cheese Pizza");
         } else if (item.equals("veggie")) {
-            return new VeggiePizza(new ChicagoPizzaIngredientFactory());
+            pizza =  new VeggiePizza(new ChicagoPizzaIngredientFactory());
+            pizza.setName("Chicago Style Veggie Pizza");
         } else if (item.equals("clam")) {
-            return new ClamPizza(new ChicagoPizzaIngredientFactory());
+            pizza = new ClamPizza(new ChicagoPizzaIngredientFactory());
+            pizza.setName("Chicago Style Clam Pizza");
         } else if (item.equals("pepperoni")) {
-            return new PepperoniPizza(new ChicagoPizzaIngredientFactory());
-        } else return null;
-    }
+            pizza = new PepperoniPizza(new ChicagoPizzaIngredientFactory());
+            pizza.setName("Chicago Style Pepperoni Pizza");
+        }
 
+        return pizza;
+    }
 }

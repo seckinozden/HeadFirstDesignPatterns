@@ -10,7 +10,7 @@ public class VeggiePizza extends Pizza {
     }
 
     @Override
-    void prepare() {
+    public void prepare() {
         System.out.println("Preparing " + name);
         dough = pizzaIngredientFactory.createDough();
         sauce = pizzaIngredientFactory.createSauce();
