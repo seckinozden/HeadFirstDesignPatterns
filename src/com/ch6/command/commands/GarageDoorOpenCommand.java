@@ -1,4 +1,7 @@
-package com.ch6.command;
+package com.ch6.command.commands;
+
+import com.ch6.command.Command;
+import com.ch6.command.receivers.GarageDoor;
 
 public class GarageDoorOpenCommand implements Command {
     GarageDoor garageDoor;

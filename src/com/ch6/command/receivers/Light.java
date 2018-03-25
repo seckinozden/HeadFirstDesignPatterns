@@ -1,4 +1,4 @@
-package com.ch6.command;
+package com.ch6.command.receivers;
 
 public class Light {
 

@@ -1,5 +1,10 @@
 package com.ch6.command;
 
+import com.ch6.command.commands.GarageDoorOpenCommand;
+import com.ch6.command.commands.LigtOnCommand;
+import com.ch6.command.receivers.GarageDoor;
+import com.ch6.command.receivers.Light;
+
 public class RemoteControlTest {
 
     public static void main(String[] args) {
