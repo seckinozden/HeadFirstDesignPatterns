@@ -3,11 +3,11 @@ package com.ch6.command.commands;
 import com.ch6.command.Command;
 import com.ch6.command.receivers.Light;
 
-public class LigtOnCommand implements Command {
+public class LightOnCommand implements Command {
 
     Light light;
 
-    public LigtOnCommand(Light light) {
+    public LightOnCommand(Light light) {
         this.light = light;
     }
 

@@ -2,8 +2,6 @@ package com.ch6.command;
 
 import com.ch6.command.commands.NoCommand;
 
-import java.util.Arrays;
-
 public class RemoteControl {
 
     Command[] onCommands;
