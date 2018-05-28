@@ -1,0 +1,42 @@
+package com.ch2.observer;
+
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
+
+    private int temperature;
+    private int humidity;
+    private int pressure;
+
+    @Override
+    public void update(int temperature, int humidity, int pressure) {
+
+    }
+
+    @Override
+    public void display() {
+
+    }
+
+    public int getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
+    }
+
+    public int getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(int humidity) {
+        this.humidity = humidity;
+    }
+
+    public int getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(int pressure) {
+        this.pressure = pressure;
+    }
+}
