@@ -1,19 +1,25 @@
 package com.ch2.observer;
 
-public class StatisticsDisplay implements Observer, DisplayElement{
+public class StatisticsDisplay implements Observer, DisplayElement {
 
     private int temperature;
     private int humidity;
     private int pressure;
 
     @Override
-    public void display() {
-
+    public void update(int temperature, int humidity, int pressure) {
+        System.err.println("Statistics Display is being updated!");
+        this.setTemperature(temperature);
+        this.setHumidity(humidity);
+        this.setPressure(pressure);
     }
 
     @Override
-    public void update(int temperature, int humidity, int pressure) {
-
+    public void display() {
+        System.out.println("##  Statistics Display  ##");
+        System.out.println("Temperature:" + temperature);
+        System.out.println("Humidity: " + humidity);
+        System.out.println("Pressure" + pressure);
     }
 
     public int getTemperature() {

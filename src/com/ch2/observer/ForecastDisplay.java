@@ -7,13 +7,19 @@ public class ForecastDisplay implements Observer, DisplayElement {
     private int pressure;
 
     @Override
-    public void display() {
-
+    public void update(int temperature, int humidity, int pressure) {
+        System.err.println("Forecast Display is being updated!");
+        this.setTemperature(temperature);
+        this.setHumidity(humidity);
+        this.setPressure(pressure);
     }
 
     @Override
-    public void update(int temperature, int humidity, int pressure) {
-
+    public void display() {
+        System.out.println("##  Forecast Display  ##");
+        System.out.println("Temperature:" + temperature);
+        System.out.println("Humidity: " + humidity);
+        System.out.println("Pressure" + pressure);
     }
 
     public int getTemperature() {

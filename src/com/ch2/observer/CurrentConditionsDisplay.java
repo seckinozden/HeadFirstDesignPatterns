@@ -8,12 +8,18 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
     @Override
     public void update(int temperature, int humidity, int pressure) {
-
+        System.err.println("Current Conditions Display is being updated!");
+        this.setTemperature(temperature);
+        this.setHumidity(humidity);
+        this.setPressure(pressure);
     }
 
     @Override
     public void display() {
-
+        System.out.println("##  Current Conditions Display  ##");
+        System.out.println("Temperature:" + temperature);
+        System.out.println("Humidity: " + humidity);
+        System.out.println("Pressure" + pressure);
     }
 
     public int getTemperature() {
