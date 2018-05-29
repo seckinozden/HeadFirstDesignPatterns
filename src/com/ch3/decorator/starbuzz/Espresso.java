@@ -1,4 +1,4 @@
-package com.ch3.decorator;
+package com.ch3.decorator.starbuzz;
 
 public class Espresso extends Beverage {
 
