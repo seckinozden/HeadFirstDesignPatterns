@@ -1,4 +1,4 @@
-package com.ch9.iterator;
+package com.ch9.iteratorandcomposite.iterator.withoutiterator;
 
 public class DinerMenu {
     static final int MAX_ITEMS = 6;
