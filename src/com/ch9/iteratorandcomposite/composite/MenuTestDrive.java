@@ -30,6 +30,7 @@ public class MenuTestDrive {
         cafeMenu.add(new MenuItem("Filtered Coffe", "Filtered Desc", true, 2.00));
 
         Waitress waitress = new Waitress(allMenus);
-        waitress.printMenu();
+        //waitress.printMenu();
+        waitress.printVegetarianMenu();
     }
 }
