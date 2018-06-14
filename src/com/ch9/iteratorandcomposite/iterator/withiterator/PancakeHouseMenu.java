@@ -2,7 +2,7 @@ package com.ch9.iteratorandcomposite.iterator.withiterator;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
 
     ArrayList<MenuItem> menuItems;
 
@@ -32,7 +32,8 @@ public class PancakeHouseMenu {
         menuItems.add(menuItem);
     }
 
-    public ArrayList<MenuItem> getMenuItems() {
-        return menuItems;
+    @Override
+    public Iterator createIterator() {
+        return new PancakeHouseMenuIterator(menuItems);
     }
 }
