@@ -76,6 +76,10 @@ public class GumballMachine {
         }
     }
 
+    void refill(int numberOfGumballs) {
+        state.refill(numberOfGumballs);
+    }
+
     @Override
     public String toString() {
         return "GumballMachine{" +

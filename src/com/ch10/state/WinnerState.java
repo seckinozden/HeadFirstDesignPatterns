@@ -39,4 +39,9 @@ public class WinnerState implements State {
             }
         }
     }
+
+    @Override
+    public void refill(int numberOfGumballs) {
+        System.out.println("You can not refill the gumball machine since there are gumballs in the machine.");
+    }
 }

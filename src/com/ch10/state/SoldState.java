@@ -32,4 +32,9 @@ public class SoldState implements State {
             gumballMachine.setState(gumballMachine.getSoldOutState());
         }
     }
+
+    @Override
+    public void refill(int numberOfGumballs) {
+        System.out.println("You can not refill since there is still gumball in the machine.");
+    }
 }

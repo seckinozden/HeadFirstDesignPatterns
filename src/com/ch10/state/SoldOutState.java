@@ -26,4 +26,11 @@ public class SoldOutState implements State {
     public void dispense() {
         System.out.println("All gumballs soldout. Can not dispense!");
     }
+
+    @Override
+    public void refill(int numberOfGumballs) {
+        System.out.println("Gumball Machine is refilled.");
+        gumballMachine.count = numberOfGumballs;
+        gumballMachine.setState(gumballMachine.getNoQuarterState());
+    }
 }
