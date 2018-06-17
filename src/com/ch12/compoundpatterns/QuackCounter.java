@@ -1,0 +1,17 @@
+package com.ch12.compoundpatterns;
+
+
+public class QuackCounter implements Quackable {
+    Quackable duck;
+    static int numberOfQuacks;
+
+    public QuackCounter(Quackable duck) {
+        this.duck = duck;
+    }
+
+    @Override
+    public void quack() {
+        duck.quack();
+        numberOfQuacks++;
+    }
+}
