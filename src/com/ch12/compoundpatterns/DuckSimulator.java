@@ -3,14 +3,15 @@ package com.ch12.compoundpatterns;
 public class DuckSimulator {
 
     public static void main(String[] args) {
-        simulate();
+        AbstractDuckFactory duckFactory = new CountingDuckFactory();
+        simulate(duckFactory);
     }
 
-    static void simulate(){
-        Quackable mallardDuck = new QuackCounter(new MallardDuck());
-        Quackable redheadDuck = new QuackCounter(new RedHeadDuck());
-        Quackable duckCall = new QuackCounter(new DuckCall());
-        Quackable rubberDuck = new QuackCounter(new RubberDuck());
+    static void simulate(AbstractDuckFactory factory){
+        Quackable mallardDuck = factory.createMallardDuck();
+        Quackable redheadDuck = factory.createRedheadDuck();
+        Quackable duckCall = factory.createDuckCall();
+        Quackable rubberDuck = factory.createRubberDuck();
         GooseAdapter goose = new GooseAdapter(new Goose());
 
         System.out.println("\n ## Duck Simulator ## \n");
