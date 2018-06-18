@@ -1,5 +1,5 @@
 package com.ch12.compoundpatterns;
 
-public interface Quackable {
+public interface Quackable extends QuackObservable {
     void quack();
 }
